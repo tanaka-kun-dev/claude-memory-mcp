@@ -1,0 +1,46 @@
+{
+  "name": "@tanaka-kun-dev/claude-memory-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for Claude Code's auto-memory system — list, search, add, update, remove memory files",
+  "type": "module",
+  "bin": {
+    "claude-memory-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "start": "node dist/index.js",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.6.0",
+    "gray-matter": "^4.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0"
+  },
+  "keywords": [
+    "mcp",
+    "claude",
+    "claude-code",
+    "memory",
+    "model-context-protocol"
+  ],
+  "license": "MIT",
+  "author": "tanaka-kun-dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tanaka-kun-dev/claude-memory-mcp.git"
+  },
+  "homepage": "https://github.com/tanaka-kun-dev/claude-memory-mcp#readme",
+  "bugs": "https://github.com/tanaka-kun-dev/claude-memory-mcp/issues",
+  "engines": {
+    "node": ">=18"
+  }
+}
